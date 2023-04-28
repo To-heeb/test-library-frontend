@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from 'react-router-dom'
-import { useAuthContext } from '../contexts/AuthProvider'
+import { useAuthContext } from '../contexts/AuthContext'
 
 function GuestLayout() {
     const { token } = useAuthContext()
@@ -9,7 +9,6 @@ function GuestLayout() {
     }
     return (
         <div>
-            GuestLayout
             <Outlet />
         </div>
     )

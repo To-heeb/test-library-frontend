@@ -9,6 +9,7 @@ import LibrarianLayout from "./layouts/LibrarianLayout";
 import UserLayout from "./layouts/UserLayout";
 import Users from "./pages/Users";
 import Dashboard from "./pages/Dashboard";
+import App from "./App";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register />
+            },
+            {
+                path: '/app',
+                element: <App />,
             },
         ]
     },

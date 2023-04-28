@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from 'react-router-dom'
-import { useAuthContext } from '../contexts/AuthProvider'
+import { useAuthContext } from '../contexts/AuthContext'
 
 function AdminLayout() {
     const { user, token } = useAuthContext()
